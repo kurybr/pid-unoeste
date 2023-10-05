@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="bancodadosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bancodadosConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.bancodadosConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bancodadosConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        vendas.codigo, vendas.data, vendas.dataviagem, vendas.diarias, vendas.valortotal, vendas.parcelas, pacotes.descricao, pacotes.valor, cidades.nome AS NomeCidade, clientes.nome AS NomeCliente, 
+                         formaspagamento.descricao AS DescricaoFormaPagamento
+FROM            vendas INNER JOIN
+                         pacotes ON vendas.pacote = pacotes.codigo INNER JOIN
+                         formaspagamento ON vendas.formapagamento = formaspagamento.codigo INNER JOIN
+                         clientes ON vendas.cliente = clientes.codigo INNER JOIN
+                         cidades ON pacotes.cidade = cidades.codigo INNER JOIN
+                         estados ON cidades.uf = estados.uf</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codigo" DataSetColumn="codigo" />
+              <Mapping SourceColumn="data" DataSetColumn="data" />
+              <Mapping SourceColumn="dataviagem" DataSetColumn="dataviagem" />
+              <Mapping SourceColumn="diarias" DataSetColumn="diarias" />
+              <Mapping SourceColumn="valortotal" DataSetColumn="valortotal" />
+              <Mapping SourceColumn="parcelas" DataSetColumn="parcelas" />
+              <Mapping SourceColumn="descricao" DataSetColumn="descricao" />
+              <Mapping SourceColumn="valor" DataSetColumn="valor" />
+              <Mapping SourceColumn="NomeCidade" DataSetColumn="NomeCidade" />
+              <Mapping SourceColumn="NomeCliente" DataSetColumn="NomeCliente" />
+              <Mapping SourceColumn="DescricaoFormaPagamento" DataSetColumn="DescricaoFormaPagamento" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigo" msprop:Generator_ColumnPropNameInRow="codigo" msprop:Generator_ColumnPropNameInTable="codigoColumn" msprop:Generator_UserColumnName="codigo" type="xs:int" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:dateTime" />
+              <xs:element name="dataviagem" msprop:Generator_ColumnVarNameInTable="columndataviagem" msprop:Generator_ColumnPropNameInRow="dataviagem" msprop:Generator_ColumnPropNameInTable="dataviagemColumn" msprop:Generator_UserColumnName="dataviagem" type="xs:dateTime" />
+              <xs:element name="diarias" msprop:Generator_ColumnVarNameInTable="columndiarias" msprop:Generator_ColumnPropNameInRow="diarias" msprop:Generator_ColumnPropNameInTable="diariasColumn" msprop:Generator_UserColumnName="diarias" type="xs:int" />
+              <xs:element name="valortotal" msprop:Generator_ColumnVarNameInTable="columnvalortotal" msprop:Generator_ColumnPropNameInRow="valortotal" msprop:Generator_ColumnPropNameInTable="valortotalColumn" msprop:Generator_UserColumnName="valortotal" type="xs:decimal" />
+              <xs:element name="parcelas" msprop:Generator_ColumnVarNameInTable="columnparcelas" msprop:Generator_ColumnPropNameInRow="parcelas" msprop:Generator_ColumnPropNameInTable="parcelasColumn" msprop:Generator_UserColumnName="parcelas" type="xs:int" />
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" msprop:Generator_UserColumnName="valor" type="xs:decimal" />
+              <xs:element name="NomeCidade" msprop:Generator_ColumnVarNameInTable="columnNomeCidade" msprop:Generator_ColumnPropNameInRow="NomeCidade" msprop:Generator_ColumnPropNameInTable="NomeCidadeColumn" msprop:Generator_UserColumnName="NomeCidade">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomeCliente" msprop:Generator_ColumnVarNameInTable="columnNomeCliente" msprop:Generator_ColumnPropNameInRow="NomeCliente" msprop:Generator_ColumnPropNameInTable="NomeClienteColumn" msprop:Generator_UserColumnName="NomeCliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DescricaoFormaPagamento" msprop:Generator_ColumnVarNameInTable="columnDescricaoFormaPagamento" msprop:Generator_ColumnPropNameInRow="DescricaoFormaPagamento" msprop:Generator_ColumnPropNameInTable="DescricaoFormaPagamentoColumn" msprop:Generator_UserColumnName="DescricaoFormaPagamento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:codigo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

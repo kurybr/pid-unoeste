@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="PID_3_Termo.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        .twitter, .facebook, .googlePlus {
+
+            width:300px;
+            height:200px;
+            float:left;            
+            margin-left:50px;
+        }
+
+        .twitter .social{
+            color:#1bb6ec;
+        }
+        .facebook .social{
+            color:#3b5998;
+        }
+        .googlePlus .social{
+            color:#dd4b39;
+        }
+        .social{
+            font-size:20px;
+            font-weight:bolder;
+            padding-top:10px;
+            height:40px;
+            text-align:center;
+            background:#f4f4f4;
+        }
+        .twitter article, .facebook article, .googlePlus article{
+            margin-top:20px;
+            text-align: center;
+            height:200px;
+            background:#f4f4f4;
+        }
+        .twitter article{
+            
+            border-bottom:3px solid #1bb6ec;
+        }
+        .facebook article{
+            border-bottom:3px solid #3b5998;
+        }
+        .googlePlus article {
+            border-bottom:3px solid #dd4b39;
+        }
+
+
+
+    </style>
+    <link href="stylesheet/estilo.css" rel="stylesheet" />    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <aside class="topo">
+    <nav class="menu cor_menu centro">
+        <ul>
+            <li class="link"><a href="Default.aspx" >Pagina Inicial</a></li>
+            <li class="link"><a href="#">Pacotes Westravel</a></li>
+            <li class="link"><a href="#">Conheça a Westravel</a></li>
+            <li class="link"><a href="#">Parceiros</a></li>
+            <li class="link"><a href="#">Contatos</a></li>
+            <li class="link"><asp:Label ID="lbAcesso" runat="server" Text="" CssClass="span_menu"></asp:Label>
+                
+            </li>
+            
+        </ul>        
+    </nav>        
+    
+            </aside>
+    <header class="cabecalho cor_header">
+    <div class="lateral"></div>
+    <div class="cor_header centro">
+    
+        <aside class="logo">
+            <img src="imagens/Logo-Westravel.png" alt="Logo Westravel"/>
+        </aside>
+    </div>
+    <div class=" lateral"></div>
+     </header>
+        <!-- Corpo do site-->
+        <div class="lateral"></div>
+    <article class="conteudo">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </article>
+        <div class="lateral"></div>
+
+
+        <!--Rodape -->
+       
+    <footer class="rodape centro">
+         <div class="lateral"></div>
+        <div class="rodape_centro">
+
+            <section class="twitter">
+                <div class="social">
+                    @Westravel
+                </div>
+                <article>
+
+                </article>
+            </section>
+            <section class="facebook">
+                <div class="social"> Curta Westravel</div>
+                <article>
+                    <img src="imagens/social/faceb.png" />
+                </article>
+            </section>
+            <aside class="googlePlus">
+                <div class="social">
+                    +Westravel
+                </div>
+                <article>
+                    <img src="imagens/social/plus.png" />
+                </article>
+            </aside>
+        </div>
+        <div class="lateral"></div>
+    </footer>
+        
+    </form>
+</body>
+</html>

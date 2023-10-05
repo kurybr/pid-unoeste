@@ -1,0 +1,18 @@
+c:\users\kury_love\documents\visual studio 2013\Projects\PID 3 Termo\bin\PID 3 Termo.dll.config
+c:\users\kury_love\documents\visual studio 2013\Projects\PID 3 Termo\bin\PID 3 Termo.dll
+c:\users\kury_love\documents\visual studio 2013\Projects\PID 3 Termo\bin\PID 3 Termo.pdb
+c:\users\kury_love\documents\visual studio 2013\Projects\PID 3 Termo\obj\Debug\PID 3 Termo.dll
+c:\users\kury_love\documents\visual studio 2013\Projects\PID 3 Termo\obj\Debug\PID 3 Termo.pdb
+C:\Users\Kury_Love\documents\visual studio 2013\Projects\PID 3 Termo\obj\Debug\PID 3 Termo.csprojResolveAssemblyReference.cache
+D:\UNOESTE\3 semestre\PID3\PID 3 Termo\bin\PID 3 Termo.dll
+D:\UNOESTE\3 semestre\PID3\PID 3 Termo\bin\PID 3 Termo.pdb
+D:\UNOESTE\3 semestre\PID3\PID 3 Termo\obj\Debug\PID 3 Termo.dll
+D:\UNOESTE\3 semestre\PID3\PID 3 Termo\obj\Debug\PID 3 Termo.pdb
+D:\UNOESTE\3 semestre\PID3\PID 3 Termo\obj\Debug\PID 3 Termo.csprojResolveAssemblyReference.cache
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\obj\Debug\PID 3 Termo.dll
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\obj\Debug\PID 3 Termo.pdb
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\bin\PID 3 Termo.dll.config
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\bin\PID 3 Termo.dll
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\bin\PID 3 Termo.pdb
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\obj\Debug\PID 3 Termo.csproj.AssemblyReference.cache
+C:\Users\kurybr\Downloads\Westravel\PID 3 Termo - Westravel\PID 3 Termo\obj\Debug\PID 3 Termo.csproj.CoreCompileInputs.cache
